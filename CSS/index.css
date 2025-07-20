@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* 🌄 Portada */
+.portada {
+  width: 100%;
+  height: 100vh;
+  background: 
+    linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+    url('Les.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  padding: 2rem;
+}
+
+.portada h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+.portada h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.portada button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.portada button:hover {
+  background-color: white;
+}
+
+/* 📖 Capítulo */
+.capitulo {
+  padding: 3rem 2rem;
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #333;
+  border-top: 2px solid #f0f0f0;
+}
+
+.capitulo h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.capitulo p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.continuara {
+  background-color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+  font-size: 2rem;
+  font-style: italic;
+  color: #a53e65;
+  font-family: 'Great Vibes', cursive;
+  animation: aparecer 2s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
